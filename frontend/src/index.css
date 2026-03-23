@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Colors */
+  --color-bg: #f5f0e6;
+  --color-header-bg: #e66a4f;
+  --color-text-main: #333333;
+  --color-text-header: rgba(255, 255, 255, 0.9);
+  --color-text-header-active: #ffffff;
+  
+  --color-left-panel-bg: linear-gradient(135deg, #f7dcd1 0%, #d5efef 50%, #f0f0c0 100%);
+  --color-right-panel-bg: #fbf5e6;
+  
+  /* Neural glows */
+  --glow-gemini: rgba(150, 100, 200, 0.6);
+  --glow-chatgpt: rgba(100, 150, 200, 0.6);
+  --glow-claude: rgba(200, 180, 100, 0.6);
+  --glow-quick: rgba(200, 100, 100, 0.6);
+  --glow-perplexity: rgba(100, 200, 150, 0.6);
+
+  /* Geometry */
+  --radius-panel: 24px;
+  --radius-header: 16px;
+  --spacing-main: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  height: 100vh;
+  overflow: hidden;
+  padding: var(--spacing-main);
+  /* Optional slight noise overlay if we want to get fancy */
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: var(--spacing-main);
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  gap: var(--spacing-main);
+  overflow: hidden;
+}
+
+/* Base Panel Styles */
+.panel {
+  border-radius: var(--radius-panel);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1.2;
+  background: var(--color-left-panel-bg);
+  box-shadow: inset 0 0 40px rgba(255,255,255,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* input at bottom */
+  padding: 24px;
+}
+
+/* Right Panel */
+.right-panel {
+  flex: 1.5;
+  background-color: var(--color-right-panel-bg);
+  border: 4px solid rgba(220, 150, 100, 0.1);
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}

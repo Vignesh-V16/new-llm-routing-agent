@@ -1,0 +1,273 @@
+﻿.\apache-maven-3.9.6\b
+in\mvn : WARNING: A 
+restricted method in 
+java.lang.System has 
+been called
+At line:1 char:59
++ ... oDlg0bFMh"; .\ap
+ache-maven-3.9.6\bin\m
+vn spring-boot:run > 
+backend.lo ...
++                 ~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (WARNING: A   
+  rest...has been     
+called:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+WARNING: java.lang.Sys
+tem::load has been 
+called by org.fusesour
+ce.jansi.internal.Jans
+iLoader in an unnamed 
+module (file:/C:/Users
+/Lenevo/Desktop/HF%20L
+LM%20Routing%20Agent/b
+ackend/apache-maven-3.
+9.6/lib/jansi-2.4.0.ja
+r)
+WARNING: Use --enable-
+native-access=ALL-UNNA
+MED to avoid a 
+warning for callers 
+in this module
+WARNING: Restricted 
+methods will be 
+blocked in a future 
+release unless native 
+access is enabled
+
+WARNING: A terminally 
+deprecated method in 
+sun.misc.Unsafe has 
+been called
+WARNING: sun.misc.Unsa
+fe::objectFieldOffset 
+has been called by com
+.google.common.util.co
+ncurrent.AbstractFutur
+e$UnsafeAtomicHelper (
+file:/C:/Users/Lenevo/
+Desktop/HF%20LLM%20Rou
+ting%20Agent/backend/a
+pache-maven-3.9.6/lib/
+guava-32.0.1-jre.jar)
+WARNING: Please 
+consider reporting 
+this to the 
+maintainers of class c
+om.google.common.util.
+concurrent.AbstractFut
+ure$UnsafeAtomicHelper
+WARNING: sun.misc.Unsa
+fe::objectFieldOffset 
+will be removed in a 
+future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.llmrouting:moe-backend >---------------------
+[INFO] Building moe-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.4:run (default-cli) > test-compile @ moe-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ moe-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ moe-backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ moe-backend ---
+[INFO] skip non existing resourceDirectory C:\Users\Lenevo\Desktop\HF LLM Routing Agent\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ moe-backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.4:run (default-cli) < test-compile @ moe-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.4:run (default-cli) @ moe-backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2026-03-22T15:25:38.381+05:30  INFO 22832 --- [moe-backend] [           main] com.llmrouting.moe.MoeApplication        : Starting MoeApplication using Java 25.0.1 with PID 22832 (C:\Users\Lenevo\Desktop\HF LLM Routing Agent\backend\target\classes started by Lenevo in C:\Users\Lenevo\Desktop\HF LLM Routing Agent\backend)
+2026-03-22T15:25:38.384+05:30  INFO 22832 --- [moe-backend] [           main] com.llmrouting.moe.MoeApplication        : No active profile set, falling back to 1 default profile: "default"
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/Lenevo/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.19/tomcat-embed-core-10.1.19.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-03-22T15:25:41.075+05:30  INFO 22832 --- [moe-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-22T15:25:41.109+05:30  INFO 22832 --- [moe-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-22T15:25:41.109+05:30  INFO 22832 --- [moe-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-22T15:25:41.288+05:30  INFO 22832 --- [moe-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-22T15:25:41.289+05:30  INFO 22832 --- [moe-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2820 ms
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.netty.util.internal.PlatformDependent0$4 (file:/C:/Users/Lenevo/.m2/repository/io/netty/netty-common/4.1.107.Final/netty-common-4.1.107.Final.jar)
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$4
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+2026-03-22T15:25:43.309+05:30  INFO 22832 --- [moe-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-22T15:25:43.322+05:30  INFO 22832 --- [moe-backend] [           main] com.llmrouting.moe.MoeApplication        : Started MoeApplication in 6.305 seconds (process running for 7.128)
+2026-03-22T15:28:32.236+05:30  INFO 22832 --- [moe-backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-22T15:28:32.278+05:30  INFO 22832 --- [moe-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-22T15:28:32.333+05:30  INFO 22832 --- [moe-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 53 ms
+2026-03-22T15:28:33.191+05:30  INFO 22832 --- [moe-backend] [nio-8080-exec-1] c.llmrouting.moe.service.RouterService   : [ROUTER] ========================================
+2026-03-22T15:28:33.191+05:30  INFO 22832 --- [moe-backend] [nio-8080-exec-1] c.llmrouting.moe.service.RouterService   : [ROUTER] Request received for query: 'Summarize the history of France in three sentences.'
+2026-03-22T15:28:33.198+05:30  INFO 22832 --- [moe-backend] [nio-8080-exec-1] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating classification phase
+2026-03-22T15:28:33.198+05:30  INFO 22832 --- [moe-backend] [nio-8080-exec-1] c.l.moe.service.ClassificationService    : [CLASSIFIER] Classifying query: 'Summarize the history of France in three sentences.'
+2026-03-22T15:28:33.202+05:30  INFO 22832 --- [moe-backend] [nio-8080-exec-1] c.l.moe.service.ClassificationService    : [CLASSIFIER] Sending prompt to model: mistralai/Mistral-7B-Instruct-v0.2
+2026-03-22T15:28:45.459+05:30 ERROR 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ClassificationService    : [CLASSIFIER] Error communicating with HF API or parsing response: Failed to resolve 'api-inference.huggingface.co' [A(1), AAAA(28)] after 4 queries 
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Failed to resolve 'api-inference.huggingface.co' [A(1), AAAA(28)] after 4 queries 
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.5.jar:6.1.5]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint Γçó Request to POST https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2 [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.5.jar:6.1.5]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:311) ~[reactor-netty-http-1.1.17.jar:1.1.17]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:172) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:488) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:436) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:583) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.Operators.error(Operators.java:198) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:576) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.transport.TransportConnector.lambda$doResolveAndConnect$11(TransportConnector.java:375) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:110) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.resolver.InetSocketAddressResolver$2.operationComplete(InetSocketAddressResolver.java:86) ~[netty-resolver-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1133) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1072) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:444) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:68) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:513) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.resolver.dns.DnsQueryContext.finishFailure(DnsQueryContext.java:380) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.resolver.dns.DnsQueryContext$5.run(DnsQueryContext.java:315) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.UnknownHostException: Failed to resolve 'api-inference.huggingface.co' [A(1), AAAA(28)] after 4 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1125) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1072) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:444) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:68) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:513) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.resolver.dns.DnsQueryContext.finishFailure(DnsQueryContext.java:380) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.resolver.dns.DnsQueryContext$5.run(DnsQueryContext.java:315) ~[netty-resolver-dns-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: io.netty.resolver.dns.DnsNameResolverTimeoutException: [1511: /[2401:4900:25d2:c47f:0:0:0:b4]:53] DefaultDnsQuestion(api-inference.huggingface.co. IN AAAA) query '1511' via UDP timed out after 5000 milliseconds (no stack trace available)
+
+2026-03-22T15:28:45.579+05:30  WARN 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ClassificationService    : [CLASSIFIER] Using safe fallback classification.
+2026-03-22T15:28:45.582+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Classification complete -> Intent: general, Multi-Model: false
+2026-03-22T15:28:45.583+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating scoring phase
+2026-03-22T15:28:45.583+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.ScoringService  : [SCORING] Scoring models against live performance tracking hooks for intent: general
+2026-03-22T15:28:45.616+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.ScoringService  : [SCORING] Final reactive computed scores considering live matrix defaults: {coding=0.7428571428571429, summarization=0.89, general=0.755, realtime=0.41000000000000003}
+2026-03-22T15:28:45.618+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Scoring complete -> Model scores: {coding=0.7428571428571429, summarization=0.89, general=0.755, realtime=0.41000000000000003}
+2026-03-22T15:28:45.618+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Beginning expert selection
+2026-03-22T15:28:45.620+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Threshold matrix executed. Final selections: [summarization]
+2026-03-22T15:28:45.620+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Experts selected -> [summarization]
+2026-03-22T15:28:45.621+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating execution phase
+2026-03-22T15:28:45.621+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ModelExecutionService    : [EXECUTION] Executing single expert: summarization
+2026-03-22T15:28:45.621+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ModelExecutionService    : [EXECUTION] Starting execution for expert 'summarization' on model 'facebook/bart-large-cnn'
+2026-03-22T15:28:55.658+05:30 ERROR 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ModelExecutionService    : [EXECUTION] Expert 'summarization' failed or timed out: Failed to resolve 'api-inference.huggingface.co' [A(1), AAAA(28)] after 4 queries 
+2026-03-22T15:28:55.660+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Experts execution complete. Synthesizing 1 responses
+2026-03-22T15:28:55.660+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.SynthesisService         : [SYNTHESIS] Synthesizing responses from 1 experts
+2026-03-22T15:28:55.661+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.SynthesisService         : [SYNTHESIS] Single expert used: summarization, passing through direct response.
+2026-03-22T15:28:55.672+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Synthesis generated 73 characters
+2026-03-22T15:28:55.673+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Flow successfully evaluated in 22482 ms
+2026-03-22T15:28:55.674+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] ========================================
+2026-03-22T15:28:55.678+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Triggering asynchronous feedback loop
+2026-03-22T15:28:55.678+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.FeedbackService          : [FEEDBACK] Evaluating response format to generate quality heuristics...
+2026-03-22T15:28:55.680+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.FeedbackService          : [FEEDBACK] Heuristic evaluation score: 0.7
+2026-03-22T15:28:55.681+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.MemoryService   : [MEMORY] Updating performance for model 'summarization': score=0.7
+2026-03-22T15:28:55.684+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.MemoryService   : [MEMORY] Storing interaction: query='Summarize the history of France in three sentences.', experts=[summarization], quality=0.7

@@ -1,0 +1,50 @@
+﻿		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1475) ~[netty-handler-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1338) ~[netty-handler-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1387) ~[netty-handler-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-22T17:03:57.720+05:30  WARN 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ClassificationService    : [CLASSIFIER] Using safe fallback classification.
+2026-03-22T17:03:57.720+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Classification complete -> Intent: general, Multi-Model: false
+2026-03-22T17:03:57.720+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating scoring phase
+2026-03-22T17:03:57.722+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.ScoringService  : [SCORING] Scoring models against live performance tracking hooks for intent: general
+2026-03-22T17:03:57.746+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.ScoringService  : [SCORING] Final reactive computed scores considering live matrix defaults: {coding=0.7428571428571429, summarization=0.89, general=0.755, realtime=0.41000000000000003}
+2026-03-22T17:03:57.747+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Scoring complete -> Model scores: {coding=0.7428571428571429, summarization=0.89, general=0.755, realtime=0.41000000000000003}
+2026-03-22T17:03:57.747+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Beginning expert selection
+2026-03-22T17:03:57.747+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Threshold matrix executed. Final selections: [summarization]
+2026-03-22T17:03:57.747+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Experts selected -> [summarization]
+2026-03-22T17:03:57.747+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating execution phase
+2026-03-22T17:03:57.747+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ModelExecutionService    : [EXECUTION] Executing single expert: summarization
+2026-03-22T17:03:57.749+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ModelExecutionService    : [EXECUTION] Starting execution for expert 'summarization' on model 'Qwen/Qwen2.5-7B-Instruct-1M'
+2026-03-22T17:03:58.218+05:30 ERROR 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ModelExecutionService    : [HF_API_ERROR] Status: 400 BAD_REQUEST, Body: {"error":{"message":"The requested model 'Qwen/Qwen2.5-7B-Instruct-1M' is not supported by any provider you have enabled.","type":"invalid_request_error","param":"model","code":"model_not_supported"}}
+2026-03-22T17:03:58.218+05:30 ERROR 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ModelExecutionService    : [EXECUTION] Expert 'summarization' failed or timed out: HF API error: {"error":{"message":"The requested model 'Qwen/Qwen2.5-7B-Instruct-1M' is not supported by any provider you have enabled.","type":"invalid_request_error","param":"model","code":"model_not_supported"}}
+2026-03-22T17:03:58.220+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Experts execution complete. Synthesizing 1 responses
+2026-03-22T17:03:58.220+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.SynthesisService         : [SYNTHESIS] Synthesizing responses from 1 experts
+2026-03-22T17:03:58.220+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.SynthesisService         : [SYNTHESIS] Single expert used: summarization, passing through direct response.
+2026-03-22T17:03:58.222+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Synthesis generated 73 characters
+2026-03-22T17:03:58.226+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Flow successfully evaluated in 3217 ms
+2026-03-22T17:03:58.226+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] ========================================
+2026-03-22T17:03:58.226+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Triggering asynchronous feedback loop
+2026-03-22T17:03:58.226+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.FeedbackService          : [FEEDBACK] Evaluating response format to generate quality heuristics...
+2026-03-22T17:03:58.226+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.FeedbackService          : [FEEDBACK] Heuristic evaluation score: 0.7
+2026-03-22T17:03:58.226+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.MemoryService   : [MEMORY] Updating performance for model 'summarization': score=0.7
+2026-03-22T17:03:58.226+05:30  INFO 22832 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.MemoryService   : [MEMORY] Storing interaction: query='hi', experts=[summarization], quality=0.7

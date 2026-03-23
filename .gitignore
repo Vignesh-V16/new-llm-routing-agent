@@ -1,0 +1,18 @@
+# Backend build artifacts
+backend/target/
+backend/*.log
+backend/out.txt
+backend/out2.txt
+backend/resp.json
+backend/hf_test_res.json
+backend/maven.zip
+backend/compile.log
+backend/err.log
+
+# Frontend build artifacts
+frontend/node_modules/
+frontend/dist/
+
+# Misc
+.DS_Store
+*.class

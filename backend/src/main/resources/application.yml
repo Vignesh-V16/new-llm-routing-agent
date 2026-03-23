@@ -1,0 +1,57 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: moe-backend
+  mvc:
+    async:
+      request-timeout: 60000
+
+# Hugging Face Settings
+hf:
+  api:
+    url: "https://router.huggingface.co/v1/chat/completions"
+    key: "${HF_API_KEY}"
+    timeout-ms: 30000
+  classifier:
+    model: "meta-llama/Llama-3.1-8B-Instruct"
+
+routing:
+  weights:
+    intent: 0.35
+    complexity: 0.20
+    latency: 0.15
+    cost: 0.15
+    performance: 0.15
+  experts:
+    coding:
+      modelId: "meta-llama/Llama-3.1-8B-Instruct"
+      supportedIntents: "coding,reasoning,general"
+      supportedComplexities: "low,medium,high"
+      latency: 350
+      cost: 0.8
+    summarization:
+      modelId: "meta-llama/Llama-3.1-8B-Instruct"
+      supportedIntents: "summarization,long-text,general"
+      supportedComplexities: "low,medium,high"
+      latency: 250
+      cost: 0.3
+    realtime:
+      modelId: "meta-llama/Llama-3.1-8B-Instruct"
+      supportedIntents: "real-time,search,research"
+      supportedComplexities: "low,medium,high"
+      latency: 500
+      cost: 0.6
+    general:
+      modelId: "meta-llama/Llama-3.1-8B-Instruct"
+      supportedIntents: "general"
+      supportedComplexities: "low,medium"
+      latency: 150
+      cost: 0.2
+    quick:
+      modelId: "meta-llama/Llama-3.1-8B-Instruct"
+      supportedIntents: "greeting"
+      supportedComplexities: "low"
+      latency: 50
+      cost: 0.05

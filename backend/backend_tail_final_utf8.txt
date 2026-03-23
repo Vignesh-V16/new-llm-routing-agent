@@ -1,0 +1,200 @@
+﻿		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.netty.http.client.HttpClientConnect$HttpObserver.onUncaughtException(HttpClientConnect.java:403) ~[reactor-netty-http-1.1.17.jar:1.1.17]
+		at reactor.netty.ReactorNetty$CompositeConnectionObserver.onUncaughtException(ReactorNetty.java:703) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onUncaughtException(DefaultPooledConnectionProvider.java:223) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onUncaughtException(DefaultPooledConnectionProvider.java:476) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:247) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.channel.FluxReceive.onInboundError(FluxReceive.java:468) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.channel.ChannelOperations.onInboundError(ChannelOperations.java:515) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.channel.ChannelOperationsHandler.exceptionCaught(ChannelOperationsHandler.java:145) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:317) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireExceptionCaught(CombinedChannelDuplexHandler.java:424) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.ChannelHandlerAdapter.exceptionCaught(ChannelHandlerAdapter.java:92) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.CombinedChannelDuplexHandler$1.fireExceptionCaught(CombinedChannelDuplexHandler.java:145) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:143) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.CombinedChannelDuplexHandler.exceptionCaught(CombinedChannelDuplexHandler.java:231) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:317) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.ssl.SslHandler.exceptionCaught(SslHandler.java:1204) ~[netty-handler-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:317) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.exceptionCaught(DefaultChannelPipeline.java:1377) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.DefaultChannelPipeline.fireExceptionCaught(DefaultChannelPipeline.java:907) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.handleReadException(AbstractNioByteChannel.java:125) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:177) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:399) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:431) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:489) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255) ~[netty-buffer-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-22T16:14:09.871+05:30  WARN 4728 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ClassificationService    : [CLASSIFIER] Using safe fallback classification.
+2026-03-22T16:14:09.871+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Classification complete -> Intent: general, Multi-Model: false
+2026-03-22T16:14:09.876+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating scoring phase
+2026-03-22T16:14:09.877+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.ScoringService  : [SCORING] Scoring models against live performance tracking hooks for intent: general
+2026-03-22T16:14:09.896+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.ScoringService  : [SCORING] Final reactive computed scores considering live matrix defaults: {coding=0.7428571428571429, summarization=0.89, general=0.755, realtime=0.41000000000000003}
+2026-03-22T16:14:09.897+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Scoring complete -> Model scores: {coding=0.7428571428571429, summarization=0.89, general=0.755, realtime=0.41000000000000003}
+2026-03-22T16:14:09.897+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Beginning expert selection
+2026-03-22T16:14:09.897+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Threshold matrix executed. Final selections: [summarization]
+2026-03-22T16:14:09.897+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Experts selected -> [summarization]
+2026-03-22T16:14:09.903+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating execution phase
+2026-03-22T16:14:09.905+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ModelExecutionService    : [EXECUTION] Executing single expert: summarization
+2026-03-22T16:14:09.907+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-2] c.l.moe.service.ModelExecutionService    : [EXECUTION] Starting execution for expert 'summarization' on model 'facebook/bart-large-cnn'
+2026-03-22T16:14:37.374+05:30 ERROR 4728 --- [moe-backend] [nio-8080-exec-4] c.l.m.exception.GlobalExceptionHandler   : [EXCEPTION] Unhandled exception caught: null
+
+org.springframework.web.context.request.async.AsyncRequestTimeoutException: null
+	at org.springframework.web.context.request.async.TimeoutDeferredResultProcessingInterceptor.handleTimeout(TimeoutDeferredResultProcessingInterceptor.java:42) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.context.request.async.DeferredResultInterceptorChain.triggerAfterTimeout(DeferredResultInterceptorChain.java:81) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.context.request.async.WebAsyncManager.lambda$startDeferredResultProcessing$5(WebAsyncManager.java:439) ~[spring-web-6.1.5.jar:6.1.5]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest.onTimeout(StandardServletAsyncWebRequest.java:184) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.AsyncListenerWrapper.fireOnTimeout(AsyncListenerWrapper.java:44) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.AsyncContextImpl.timeout(AsyncContextImpl.java:136) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:135) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:243) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-22T16:14:47.008+05:30  INFO 4728 --- [moe-backend] [nio-8080-exec-5] c.llmrouting.moe.service.RouterService   : [ROUTER] ========================================
+2026-03-22T16:14:47.008+05:30  INFO 4728 --- [moe-backend] [nio-8080-exec-5] c.llmrouting.moe.service.RouterService   : [ROUTER] Request received for query: 'hi'
+2026-03-22T16:14:47.008+05:30  INFO 4728 --- [moe-backend] [nio-8080-exec-5] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating classification phase
+2026-03-22T16:14:47.008+05:30  INFO 4728 --- [moe-backend] [nio-8080-exec-5] c.l.moe.service.ClassificationService    : [CLASSIFIER] Classifying query: 'hi'
+2026-03-22T16:14:47.008+05:30  INFO 4728 --- [moe-backend] [nio-8080-exec-5] c.l.moe.service.ClassificationService    : [CLASSIFIER] Sending prompt to model: google/flan-t5-base
+2026-03-22T16:14:48.226+05:30 ERROR 4728 --- [moe-backend] [ctor-http-nio-3] c.l.moe.service.ClassificationService    : [CLASSIFIER] Error communicating with HF API or parsing response: 404 Not Found from POST https://router.huggingface.co/hf-inference/models/google/flan-t5-base
+
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST https://router.huggingface.co/hf-inference/models/google/flan-t5-base
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310) ~[spring-webflux-6.1.5.jar:6.1.5]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint Γçó 404 NOT_FOUND from POST https://router.huggingface.co/hf-inference/models/google/flan-t5-base [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310) ~[spring-webflux-6.1.5.jar:6.1.5]
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214) ~[spring-webflux-6.1.5.jar:6.1.5]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.4.jar:3.6.4]
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:415) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:446) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:500) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:793) ~[reactor-netty-http-1.1.17.jar:1.1.17]
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:114) ~[reactor-netty-core-1.1.17.jar:1.1.17]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:289) ~[netty-handler-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1475) ~[netty-handler-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1338) ~[netty-handler-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1387) ~[netty-handler-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-22T16:14:48.256+05:30  WARN 4728 --- [moe-backend] [ctor-http-nio-3] c.l.moe.service.ClassificationService    : [CLASSIFIER] Using safe fallback classification.
+2026-03-22T16:14:48.257+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.llmrouting.moe.service.RouterService   : [ROUTER] Classification complete -> Intent: general, Multi-Model: false
+2026-03-22T16:14:48.257+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating scoring phase
+2026-03-22T16:14:48.257+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.llmrouting.moe.service.ScoringService  : [SCORING] Scoring models against live performance tracking hooks for intent: general
+2026-03-22T16:14:48.260+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.llmrouting.moe.service.ScoringService  : [SCORING] Final reactive computed scores considering live matrix defaults: {coding=0.7428571428571429, summarization=0.89, general=0.755, realtime=0.41000000000000003}
+2026-03-22T16:14:48.261+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.llmrouting.moe.service.RouterService   : [ROUTER] Scoring complete -> Model scores: {coding=0.7428571428571429, summarization=0.89, general=0.755, realtime=0.41000000000000003}
+2026-03-22T16:14:48.261+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.llmrouting.moe.service.RouterService   : [ROUTER] Beginning expert selection
+2026-03-22T16:14:48.266+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.llmrouting.moe.service.RouterService   : [ROUTER] Threshold matrix executed. Final selections: [summarization]
+2026-03-22T16:14:48.266+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.llmrouting.moe.service.RouterService   : [ROUTER] Experts selected -> [summarization]
+2026-03-22T16:14:48.267+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.llmrouting.moe.service.RouterService   : [ROUTER] Initiating execution phase
+2026-03-22T16:14:48.267+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.l.moe.service.ModelExecutionService    : [EXECUTION] Executing single expert: summarization
+2026-03-22T16:14:48.267+05:30  INFO 4728 --- [moe-backend] [ctor-http-nio-3] c.l.moe.service.ModelExecutionService    : [EXECUTION] Starting execution for expert 'summarization' on model 'facebook/bart-large-cnn'
+2026-03-22T16:15:17.353+05:30 ERROR 4728 --- [moe-backend] [nio-8080-exec-6] c.l.m.exception.GlobalExceptionHandler   : [EXCEPTION] Unhandled exception caught: null
+
+org.springframework.web.context.request.async.AsyncRequestTimeoutException: null
+	at org.springframework.web.context.request.async.TimeoutDeferredResultProcessingInterceptor.handleTimeout(TimeoutDeferredResultProcessingInterceptor.java:42) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.context.request.async.DeferredResultInterceptorChain.triggerAfterTimeout(DeferredResultInterceptorChain.java:81) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.context.request.async.WebAsyncManager.lambda$startDeferredResultProcessing$5(WebAsyncManager.java:439) ~[spring-web-6.1.5.jar:6.1.5]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest.onTimeout(StandardServletAsyncWebRequest.java:184) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.AsyncListenerWrapper.fireOnTimeout(AsyncListenerWrapper.java:44) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.AsyncContextImpl.timeout(AsyncContextImpl.java:136) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:135) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:243) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+

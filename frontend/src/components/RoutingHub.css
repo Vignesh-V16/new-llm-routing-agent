@@ -1,0 +1,227 @@
+.routing-hub-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.connecting-lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 500px; /* Taller to accommodate the spread */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.path {
+  fill: none;
+  stroke-width: 5; /* Slightly thicker for energy flow */
+  opacity: 0.35;
+  filter: drop-shadow(0 0 4px currentColor);
+}
+
+.path-node {
+  opacity: 0.6;
+}
+
+/* Mid-point Glowing Nodes */
+.node-gemini-dot { fill: #b685ff; filter: drop-shadow(0 0 8px #b685ff); }
+.node-chatgpt-dot { fill: #7fa4bd; filter: drop-shadow(0 0 8px #7fa4bd); }
+.node-claude-dot { fill: #dbb37c; filter: drop-shadow(0 0 8px #dbb37c); }
+.node-quick-dot { fill: #eb7a7a; filter: drop-shadow(0 0 8px #eb7a7a); }
+.node-perplexity-dot { fill: #91cba7; filter: drop-shadow(0 0 8px #91cba7); }
+
+.path-gemini { stroke: #b685ff; }
+.path-chatgpt { stroke: #7fa4bd; }
+.path-claude { stroke: #dbb37c; }
+.path-quick { stroke: #eb7a7a; }
+.path-perplexity { stroke: #91cba7; }
+
+.hub-center-glow {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  /* Saturated, tight neural flow dispersion - darker/brighter */
+  background: radial-gradient(circle at 35% 35%, rgba(0, 240, 210, 0.9) 0%, transparent 60%),
+              radial-gradient(circle at 65% 35%, rgba(160, 50, 255, 0.8) 0%, transparent 60%),
+              radial-gradient(circle at 50% 80%, rgba(240, 40, 40, 0.9) 0%, transparent 70%),
+              radial-gradient(circle at 80% 50%, rgba(240, 200, 40, 0.8) 0%, transparent 60%);
+  filter: blur(25px);
+  z-index: 0;
+  opacity: 1; 
+}
+
+.hub-center {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Centered on both X and Y */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  gap: 16px;
+}
+
+.hub-icon-container {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  /* Truly soft glass bubble matching image 2 */
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.04), inset 0 4px 15px rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hub-icons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@keyframes spin-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hub-gear {
+  margin-right: -10px;
+  z-index: 0;
+  animation: spin-clockwise 12s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+.hub-brain {
+  z-index: 1;
+}
+
+.hub-label {
+  font-weight: 500;
+  color: #3f3f3f;
+  font-size: 1.15rem;
+  letter-spacing: -0.2px;
+  white-space: nowrap; /* Forces text to one line */
+}
+
+.llm-nodes {
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 480px; /* Spread matches the new height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.llm-node {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 60px;
+  opacity: 0.45; /* Appear "down" by default */
+  filter: grayscale(0.9) brightness(0.9);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.node-glow {
+  position: absolute;
+  left: -20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  filter: blur(28px);
+  z-index: -1;
+  opacity: 0.75; /* Increased opacity for more "pop" */
+}
+
+/* Specific glows - more saturated hex codes */
+.node-gemini .node-glow { background: #9852ff; }
+.node-chatgpt .node-glow { background: #4e8fb8; }
+.node-claude .node-glow { background: #d69b4e; }
+.node-quick .node-glow { background: #f87171; }
+.node-perplexity .node-glow { background: #459a76; }
+
+.node-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border: 1.5px solid #000;
+  border-radius: 50%;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Specific icon backgrounds matching paths */
+.node-gemini .node-icon { background: #b685ff; }
+.node-chatgpt .node-icon { background: #7fa4bd; }
+.node-claude .node-icon { background: #dbb37c; }
+.node-quick .node-icon { background: #eb7a7a; }
+.node-perplexity .node-icon { background: #91cba7; }
+
+.node-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #333333;
+  margin-left: 10px; 
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+/* Active States */
+.path.active {
+  opacity: 1;
+  stroke-width: 6;
+  filter: drop-shadow(0 0 12px currentColor);
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-path 1.5s ease-out forwards;
+}
+
+@keyframes draw-path {
+  to { stroke-dashoffset: 0; }
+}
+
+.path-node.active {
+  opacity: 1;
+  r: 10;
+  transition: all 0.3s ease;
+}
+
+.llm-node.active {
+  transform: scale(1.08);
+  opacity: 1;
+  filter: grayscale(0) brightness(1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.llm-node.active .node-glow {
+  opacity: 1;
+  filter: blur(20px);
+  transform: scale(1.2);
+}
+
+.llm-node.active .node-label {
+  font-weight: 700;
+  color: #000;
+}

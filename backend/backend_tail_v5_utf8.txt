@@ -1,0 +1,158 @@
+﻿.\apache-maven-3.9.6\b
+in\mvn : WARNING: A 
+restricted method in 
+java.lang.System has 
+been called
+At line:1 char:58
++ ... OwGhJpnzL"; .\ap
+ache-maven-3.9.6\bin\m
+vn spring-boot:run > 
+backend_v5 ...
++                 ~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (WARNING: A   
+  rest...has been     
+called:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+WARNING: java.lang.Sys
+tem::load has been 
+called by org.fusesour
+ce.jansi.internal.Jans
+iLoader in an unnamed 
+module (file:/C:/Users
+/Lenevo/Desktop/HF%20L
+LM%20Routing%20Agent/b
+ackend/apache-maven-3.
+9.6/lib/jansi-2.4.0.ja
+r)
+WARNING: Use --enable-
+native-access=ALL-UNNA
+MED to avoid a 
+warning for callers 
+in this module
+WARNING: Restricted 
+methods will be 
+blocked in a future 
+release unless native 
+access is enabled
+
+WARNING: A terminally 
+deprecated method in 
+sun.misc.Unsafe has 
+been called
+WARNING: sun.misc.Unsa
+fe::objectFieldOffset 
+has been called by com
+.google.common.util.co
+ncurrent.AbstractFutur
+e$UnsafeAtomicHelper (
+file:/C:/Users/Lenevo/
+Desktop/HF%20LLM%20Rou
+ting%20Agent/backend/a
+pache-maven-3.9.6/lib/
+guava-32.0.1-jre.jar)
+WARNING: Please 
+consider reporting 
+this to the 
+maintainers of class c
+om.google.common.util.
+concurrent.AbstractFut
+ure$UnsafeAtomicHelper
+WARNING: sun.misc.Unsa
+fe::objectFieldOffset 
+will be removed in a 
+future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.llmrouting:moe-backend >---------------------
+[INFO] Building moe-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.4:run (default-cli) > test-compile @ moe-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ moe-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ moe-backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 19 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ moe-backend ---
+[INFO] skip non existing resourceDirectory C:\Users\Lenevo\Desktop\HF LLM Routing Agent\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ moe-backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.4:run (default-cli) < test-compile @ moe-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.4:run (default-cli) @ moe-backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2026-03-22T16:43:40.872+05:30  INFO 6764 --- [moe-backend] [           main] com.llmrouting.moe.MoeApplication        : Starting MoeApplication using Java 25.0.1 with PID 6764 (C:\Users\Lenevo\Desktop\HF LLM Routing Agent\backend\target\classes started by Lenevo in C:\Users\Lenevo\Desktop\HF LLM Routing Agent\backend)
+2026-03-22T16:43:40.878+05:30  INFO 6764 --- [moe-backend] [           main] com.llmrouting.moe.MoeApplication        : No active profile set, falling back to 1 default profile: "default"
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/Lenevo/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.19/tomcat-embed-core-10.1.19.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-03-22T16:43:43.712+05:30  INFO 6764 --- [moe-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-22T16:43:43.745+05:30  INFO 6764 --- [moe-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-22T16:43:43.745+05:30  INFO 6764 --- [moe-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-22T16:43:43.903+05:30  INFO 6764 --- [moe-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-22T16:43:43.904+05:30  INFO 6764 --- [moe-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2911 ms
+2026-03-22T16:43:44.045+05:30  WARN 6764 --- [moe-backend] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'routingConfig': Could not bind properties to 'RoutingConfig' : prefix=routing, ignoreInvalidFields=false, ignoreUnknownFields=true
+2026-03-22T16:43:44.054+05:30  INFO 6764 --- [moe-backend] [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-22T16:43:44.083+05:30  INFO 6764 --- [moe-backend] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-22T16:43:44.123+05:30 ERROR 6764 --- [moe-backend] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'routing.weights.coding.modelid' to java.lang.Double:
+
+    Property: routing.weights.coding.modelid
+    Value: "Qwen/Qwen2.5-7B-Instruct-1M"
+    Origin: class path resource [application.yml] - 29:16
+    Reason: failed to convert java.lang.String to java.lang.Double (caused by java.lang.NumberFormatException: For input string: "Qwen/Qwen2.5-7B-Instruct-1M")
+
+Action:
+
+Update your application's configuration
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.462 s
+[INFO] Finished at: 2026-03-22T16:43:44+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.4:run (default-cli) on project moe-backend: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
