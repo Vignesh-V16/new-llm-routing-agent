@@ -8,6 +8,15 @@ backend/hf_test_res.json
 backend/maven.zip
 backend/compile.log
 backend/err.log
+backend/backend_tail*.txt
+backend/apache-maven-3.9.6/
+backend/out.txt
+backend/out2.txt
+backend/resp.json
+backend/hf_test_res.json
+backend/maven.zip
+backend/compile.log
+backend/err.log
 
 # Frontend build artifacts
 frontend/node_modules/
