@@ -123,6 +123,10 @@ public class ModelExecutionService {
         // Add expert-specific role as system message
         messages.add(new OpenAiChatRequest.Message("system", expertRole));
         
+        // Add current date context
+        String currentDate = java.time.LocalDate.now().format(java.time.format.DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        messages.add(new OpenAiChatRequest.Message("system", "Current Date: " + currentDate + ". Please base any time-sensitive answers on this date."));
+        
         // Add user query as user message
         messages.add(new OpenAiChatRequest.Message("user", query));
         
