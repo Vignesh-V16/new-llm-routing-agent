@@ -3,6 +3,7 @@ services:
     name: moe-backend
     env: docker
     dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
     plan: free
     healthCheckPath: /actuator/health
     envVars:
