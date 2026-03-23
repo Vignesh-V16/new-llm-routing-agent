@@ -14,7 +14,7 @@ const History = ({ onSelectConversation }) => {
       .then(data => {
         // Map the backend Interaction object to the frontend expectations
         const mappedData = data.map(item => ({
-          id: item.timestamp + Math.random(),
+          id: item.id,
           text: item.query,
           finalAnswer: item.finalAnswer,
           model: mapExpertToBrand(item.selectedExperts[0] || 'Unknown'),
@@ -31,6 +31,16 @@ const History = ({ onSelectConversation }) => {
         setLoading(false);
       });
   }, []);
+
+  const handleDelete = async (e, id) => {
+    e.stopPropagation();
+    try {
+      await fetch(`${API_BASE_URL}/api/v1/history/${id}`, { method: 'DELETE' });
+      setHistoryItems(prev => prev.filter(item => item.id !== id));
+    } catch (err) {
+      console.error("Failed to delete history item:", err);
+    }
+  };
 
   const mapExpertToBrand = (expert) => {
     switch(expert.toLowerCase()) {
@@ -147,7 +157,7 @@ const History = ({ onSelectConversation }) => {
               <div className={`status-dot ${item.status}`}></div>
               <div className="action-icons">
                  <button onClick={(e) => e.stopPropagation()} title="Refresh">🔄</button>
-                 <button onClick={(e) => e.stopPropagation()} title="Delete">🗑️</button>
+                 <button onClick={(e) => handleDelete(e, item.id)} title="Delete">🗑️</button>
                  <button onClick={(e) => e.stopPropagation()} title="Bookmark">🔖</button>
                  <button onClick={(e) => e.stopPropagation()} title="Share">🔗</button>
               </div>

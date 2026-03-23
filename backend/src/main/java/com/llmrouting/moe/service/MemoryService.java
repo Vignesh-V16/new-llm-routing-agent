@@ -12,6 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
@@ -38,6 +39,14 @@ public class MemoryService {
         synchronized (memoryStore) {
             return new ArrayList<>(memoryStore);
         }
+    }
+
+    public Mono<Void> deleteInteraction(String id) {
+        log.info("[MEMORY] Deleting interaction with id: {}", id);
+        synchronized (memoryStore) {
+            memoryStore.removeIf(interaction -> interaction.getId().equals(id));
+        }
+        return Mono.empty();
     }
 
     public Mono<Void> updatePerformance(String modelUsed, double successScore) {
@@ -94,6 +103,7 @@ public class MemoryService {
 
     // Inner Classes (DTOs)
     public static class Interaction {
+        private final String id;
         private final String query;
         private final ClassificationResult classification;
         private final List<String> selectedExperts;
@@ -105,6 +115,7 @@ public class MemoryService {
         private final double cost;
 
         public Interaction(String query, ClassificationResult classification, List<String> selectedExperts, String finalAnswer, double finalScore, double responseQualityScore, LocalDateTime timestamp, long latencyMs, double cost) {
+            this.id = UUID.randomUUID().toString();
             this.query = query;
             this.classification = classification;
             this.selectedExperts = selectedExperts;
@@ -116,6 +127,7 @@ public class MemoryService {
             this.cost = cost;
         }
 
+        public String getId() { return id; }
         public String getQuery() { return query; }
         public ClassificationResult getClassification() { return classification; }
         public List<String> getSelectedExperts() { return selectedExperts; }
