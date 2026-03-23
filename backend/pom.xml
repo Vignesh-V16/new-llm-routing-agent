@@ -27,6 +27,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         
+        <!-- Actuator for Health Checks (Render deployment) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        
         <!-- WebFlux for async WebClient (non-blocking API calls) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
